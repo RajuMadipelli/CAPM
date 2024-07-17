@@ -1,0 +1,56 @@
+
+###
+http://localhost:4004/odata/v4/catalogservice/employeeSet?$filter=language eq 'E'
+
+###
+http://localhost:4004/odata/v4/CatalogService/employeeSet?$filter=contains(nameFirst,'ra')
+
+###
+http://localhost:4004/odata/v4/CatalogService/Products
+
+###
+http://localhost:4004/odata/v4/CatalogService/Products/74867AD200E41EDBA5D8B06B26EBA052/To_Items
+
+###hfgd
+POST http://localhost:4004/odata/v4/Catalogservice/employeeSet
+Content-Type:application/json
+
+{
+  "nameFirst": "Christianoooo",
+  "nameMiddle": "M",
+  "nameLast": "Ronaldo",
+  "nameInitials": null,
+  "sex": "M",
+  "language": "E",
+  "phoneNumber": "+918810504555",
+  "email": "chris.ronaldo@gmail.com",
+  "loginName": "CHRISRL",
+  "Currency_code": "USD",
+  "salaryAmount": 76395,
+  "accountNumber": "32109876",
+  "bankId": "66665555",
+  "bankName": "My Bank of London"
+}
+ 
+###
+http://localhost:4004/odata/v4/catalogService/POs/74867AD200E41EDBA5D8B0C98DC30052
+
+###
+POST http://localhost:4004/odata/v4/catalogService/POs/74867AD200E41EDBA5D8B0C98DC30052/catalogService.boost
+Content-Type: application/json
+ 
+{}
+
+###
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+
+
+###
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSet/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+Content-Type: application/json
+ 
+{
+   "salaryAmount": 1000001
+ }
+###
+ http://localhost:4004/v2/odata/v4/CatalogService/EmployeeSet
